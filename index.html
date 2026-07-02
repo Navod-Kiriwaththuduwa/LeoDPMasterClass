@@ -1,11 +1,11 @@
 <!doctype html>
-<!-- DP Year Interactive Web | Separated HTML, CSS and JavaScript files -->
+<!-- DP Year Interactive Web | GitHub Pages ready | Mobile action bar fixed -->
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Conducting a DP Year | Interactive Web</title>
-  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="styles.css?v=mobile-actions-v2">
 </head>
 <body>
   <header class="topbar">
@@ -13,11 +13,11 @@
       <div class="crest">DP</div>
       <div><h1>Conducting a DP Year</h1><small>Interactive masterclass + aligned workbook</small></div>
     </div>
-    <div class="top-actions">
-      <button class="btn ghost" id="audienceBtn">Audience view</button>
-      <button class="btn ghost" id="printBtn">Print workbook</button>
-      <button class="btn" id="exportBtn">Export answers</button>
-      <button class="btn primary" id="fullBtn">Fullscreen</button>
+    <div class="top-actions" aria-label="Presentation actions">
+      <button type="button" class="btn ghost" id="audienceBtn">Audience view</button>
+      <button type="button" class="btn ghost" id="printBtn">Print workbook</button>
+      <button type="button" class="btn" id="exportBtn">Export answers</button>
+      <button type="button" class="btn primary" id="fullBtn">Fullscreen</button>
     </div>
   </header>
   <div class="app">
@@ -34,11 +34,11 @@
     </main>
   </div>
   <div class="bottom-nav">
-    <button class="btn" id="prevBtn">← Previous</button>
+    <button type="button" class="btn" id="prevBtn">← Previous</button>
     <div class="status" id="mobileStatus">1 / 16</div>
-    <button class="btn primary" id="nextBtn">Next →</button>
+    <button type="button" class="btn primary" id="nextBtn">Next →</button>
   </div>
   <div class="print-area" id="printArea"></div>
-  <script src="app.js"></script>
+  <script src="app.js?v=mobile-actions-v2"></script>
 </body>
 </html>

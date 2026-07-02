@@ -1,21 +1,9 @@
-GitHub Pages upload instructions
+Upload these files to the GitHub repository root:
 
-1. Upload these files to the root of your GitHub repository:
-   - index.html
-   - styles.css
-   - app.js
-   - .nojekyll
+index.html
+styles.css
+app.js
+.nojekyll
 
-2. Do not upload the ZIP file itself to GitHub Pages. Extract it first.
-
-3. In GitHub repository:
-   Settings > Pages > Build and deployment > Source: Deploy from a branch
-   Branch: main
-   Folder: /root
-   Save.
-
-4. Wait 1-3 minutes, then open the Pages URL.
-
-If GitHub shows "Timeout reached, aborting!" while deploy is running, retry the workflow after a few minutes. The generated site is static and small, so this is usually a GitHub Pages deployment-side timeout, not a code problem.
-
-Mobile print fix: Print, Export, and Full buttons are visible in the mobile top bar. Upload index.html, styles.css, app.js, and .nojekyll to the repository root.
+This version includes a mobile action bar fix. On phone screens the top bar shows: Print | Export | Full.
+The CSS/JS links include version query strings to bypass cached old files on GitHub Pages.

@@ -1,11 +1,11 @@
-GitHub Pages upload package with Leo and Lions logos in the header.
+DP Year web update: Export option removed and Leo + Lions logos added to printed workbook pages.
 
-Upload these to your repository:
+Upload these to your GitHub repository root:
 - index.html
 - styles.css
 - app.js
+- .nojekyll
 - assets/leo-logo.png
 - assets/lions-logo.png
-- .nojekyll
 
-Keep the assets folder path unchanged.
+Keep the assets folder exactly as included.

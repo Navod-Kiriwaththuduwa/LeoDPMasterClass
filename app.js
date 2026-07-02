@@ -115,13 +115,12 @@ const slides = [{"id":1,"section":"Opening","title":"Conducting a DP Year","subt
         const q = (wb.questions || []).map((question, qi)=>`<p><b>${esc(question)}</b></p><div class="print-field">${esc(getValue(keyFor(s.id,'q',qi)) || '')}</div>`).join('');
         const checks = (wb.checklist || []).length ? `<p><b>Checklist</b></p>` + (wb.checklist || []).map((item, ci)=>`<p>${getValue(keyFor(s.id,'check',ci))==='1'?'☑':'☐'} ${esc(item)}</p>`).join('') : '';
         const scores = (wb.scorecard || []).length ? `<p><b>Readiness scorecard</b></p>` + (wb.scorecard || []).map((item, ri)=>`<p>${esc(item)}: ${esc(getValue(keyFor(s.id,'score',ri)) || '')} / 10</p>`).join('') : '';
-        return `<section class="print-section"><h1>Slide ${String(s.id).padStart(2,'0')} | ${esc(s.title)}</h1><h2>${esc(s.subtitle || '')}</h2><p class="print-quote">${esc(s.quote || '')}</p>${q}${checks}${scores}<p><b>Action after this forum</b></p><div class="print-field">${esc(getValue(keyFor(s.id,'action')) || '')}</div></section>`;
+        return `<section class="print-section"><div class="print-header"><div class="print-logos"><img src="assets/leo-logo.png" alt="Leo logo"><img src="assets/lions-logo.png" alt="Lions logo"></div><div class="print-title"><strong>DP Year Workbook</strong><span>Leo Multiple District 306 Sri Lanka & Maldives</span></div></div><h1>Slide ${String(s.id).padStart(2,'0')} | ${esc(s.title)}</h1><h2>${esc(s.subtitle || '')}</h2><p class="print-quote">${esc(s.quote || '')}</p>${q}${checks}${scores}<p><b>Action after this forum</b></p><div class="print-field">${esc(getValue(keyFor(s.id,'action')) || '')}</div></section>`;
       }).join('');
     }
 
     $('#prevBtn').addEventListener('click',()=>go(current-1));
     $('#nextBtn').addEventListener('click',()=>go(current+1));
-    $('#exportBtn').addEventListener('click', exportAnswers);
     $('#printBtn').addEventListener('click',()=>{ renderPrintArea(); window.print(); });
     $('#audienceBtn').addEventListener('click',()=>{ document.body.classList.toggle('audience'); $('#audienceBtn').textContent = document.body.classList.contains('audience') ? 'Workbook view' : 'Audience view'; });
     $('#fullBtn').addEventListener('click',()=>{ if(!document.fullscreenElement) document.documentElement.requestFullscreen?.(); else document.exitFullscreen?.(); });

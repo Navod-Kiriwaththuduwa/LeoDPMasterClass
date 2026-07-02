@@ -103,11 +103,10 @@ textarea:focus,input[type=text]:focus{border-color:#b38900;box-shadow:0 0 0 3px 
   .brand-text{min-width:0!important;flex:1 1 auto}
   .brand h1{font-size:13px!important;max-width:none!important;white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
   .brand small{display:none!important}
-  .top-actions{display:grid!important;width:100%!important;grid-template-columns:repeat(3,minmax(0,1fr))!important;gap:7px!important;justify-content:stretch!important;align-items:stretch!important;margin:0!important}
+  .top-actions{display:grid!important;width:100%!important;grid-template-columns:repeat(2,minmax(0,1fr))!important;gap:7px!important;justify-content:stretch!important;align-items:stretch!important;margin:0!important}
   .top-actions #audienceBtn{display:none!important}
-  .top-actions #printBtn,.top-actions #exportBtn,.top-actions #fullBtn{display:flex!important;visibility:visible!important;opacity:1!important;width:100%!important;min-width:0!important;min-height:38px!important;justify-content:center!important;align-items:center!important;padding:9px 4px!important;text-align:center!important;line-height:1!important;overflow:hidden!important;text-overflow:clip!important;white-space:nowrap!important;font-size:0!important}
+  .top-actions #printBtn,.top-actions #fullBtn{display:flex!important;visibility:visible!important;opacity:1!important;width:100%!important;min-width:0!important;min-height:38px!important;justify-content:center!important;align-items:center!important;padding:9px 4px!important;text-align:center!important;line-height:1!important;overflow:hidden!important;text-overflow:clip!important;white-space:nowrap!important;font-size:0!important}
   .top-actions #printBtn::before{content:"Print";font-size:12px;font-weight:900}
-  .top-actions #exportBtn::before{content:"Export";font-size:12px;font-weight:900}
   .top-actions #fullBtn::before{content:"Full";font-size:12px;font-weight:900}
   .slide-card{padding:18px;border-radius:18px}
   .slide-title{font-size:38px}
@@ -130,4 +129,10 @@ textarea:focus,input[type=text]:focus{border-color:#b38900;box-shadow:0 0 0 3px 
   .print-section p{font-size:10pt;line-height:1.35}
   .print-field{border:1px solid #b9c7d8;border-radius:8px;padding:8px;margin:6px 0 11px;min-height:28px;white-space:pre-wrap}
   .print-quote{border-left:4px solid #F2B705;padding-left:10px;font-weight:bold;color:#061B3A}
+  .print-header{display:flex;align-items:center;justify-content:space-between;gap:12px;border-bottom:2px solid #061B3A;padding-bottom:7mm;margin-bottom:8mm}
+  .print-logos{display:flex;align-items:center;gap:6mm}
+  .print-logos img{height:17mm;width:auto;object-fit:contain}
+  .print-title{text-align:right;color:#061B3A;line-height:1.25}
+  .print-title strong{display:block;font-size:14pt}
+  .print-title span{display:block;font-size:9pt;color:#334155}
 }

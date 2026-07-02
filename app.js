@@ -30,7 +30,7 @@ const slides = [{"id":1,"section":"Opening","title":"Conducting a DP Year","subt
             <div class="quote"><p>${esc(s.quote || '')}</p></div>
             ${s.pills ? `<div class="pills">${s.pills.map(p=>`<span class="pill">${esc(p)}</span>`).join('')}</div>` : ''}
             <div class="content-grid ${many}">
-              ${s.blocks.map((b,idx)=>`<div class="block"><div class="label"><span class="badge">${idx+1}</span>${esc(b.label)}</div><p>${esc(b.text).replace(/\\n/g, '<br>')}</p></div>`).join('')}
+              ${s.blocks.map((b,idx)=>`<div class="block"><div class="label"><span class="badge">${idx+1}</span>${esc(b.label)}</div><p>${esc(b.text).split(String.fromCharCode(10)).filter(Boolean).join('<br><br>')}</p></div>`).join('')}
             </div>
             <div class="slide-footer"><span>Leo Multiple District 306 Sri Lanka & Maldives</span><span>Lead the District • Win the Hearts • Build the Legacy</span></div>
           </div>

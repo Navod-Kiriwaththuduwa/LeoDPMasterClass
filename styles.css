@@ -91,10 +91,20 @@
       .bottom-nav{display:grid}
     }
     @media (max-width:720px){
-      .topbar{padding:10px 12px}
-      .brand h1{font-size:13px;max-width:180px}
+      .topbar{padding:10px 12px;flex-wrap:wrap;gap:8px}
+      .brand{width:100%}
+      .brand h1{font-size:13px;max-width:calc(100vw - 76px)}
       .brand small{display:none}
-      .top-actions .btn:not(.primary){display:none}
+      .top-actions{width:100%;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}
+      .top-actions .btn{width:100%;padding:9px 8px;font-size:12px;text-align:center}
+      .top-actions .btn:not(#printBtn):not(#exportBtn):not(#fullBtn){display:none}
+      #printBtn,#exportBtn,#fullBtn{display:inline-flex;justify-content:center;align-items:center}
+      #printBtn{font-size:0}
+      #printBtn::before{content:"Print";font-size:12px}
+      #exportBtn{font-size:0}
+      #exportBtn::before{content:"Export";font-size:12px}
+      #fullBtn{font-size:0}
+      #fullBtn::before{content:"Full";font-size:12px}
       .slide-card{padding:18px;border-radius:18px}
       .slide-title{font-size:38px}
       .slide-title.small{font-size:30px}

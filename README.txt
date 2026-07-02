@@ -17,3 +17,5 @@ GitHub Pages upload instructions
 4. Wait 1-3 minutes, then open the Pages URL.
 
 If GitHub shows "Timeout reached, aborting!" while deploy is running, retry the workflow after a few minutes. The generated site is static and small, so this is usually a GitHub Pages deployment-side timeout, not a code problem.
+
+Mobile print fix: Print, Export, and Full buttons are visible in the mobile top bar. Upload index.html, styles.css, app.js, and .nojekyll to the repository root.

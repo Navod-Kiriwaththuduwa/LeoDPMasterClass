@@ -1,9 +1,11 @@
-Upload these files to the GitHub repository root:
+GitHub Pages upload package with Leo and Lions logos in the header.
 
-index.html
-styles.css
-app.js
-.nojekyll
+Upload these to your repository:
+- index.html
+- styles.css
+- app.js
+- assets/leo-logo.png
+- assets/lions-logo.png
+- .nojekyll
 
-This version includes a mobile action bar fix. On phone screens the top bar shows: Print | Export | Full.
-The CSS/JS links include version query strings to bypass cached old files on GitHub Pages.
+Keep the assets folder path unchanged.
